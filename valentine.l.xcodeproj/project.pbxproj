@@ -14,6 +14,7 @@
 		D03D361D2692ED2900BD8F39 /* valentine_lTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D361C2692ED2900BD8F39 /* valentine_lTests.swift */; };
 		D03D36282692ED2900BD8F39 /* valentine_lUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D36272692ED2900BD8F39 /* valentine_lUITests.swift */; };
 		D0DE2AF526933720005E1352 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0DE2AF426933720005E1352 /* Kingfisher */; };
+		D0E29EFE26934FC3008246D6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E29EFD26934FC3008246D6 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D03D36232692ED2900BD8F39 /* valentine.lUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valentine.lUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03D36272692ED2900BD8F39 /* valentine_lUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valentine_lUITests.swift; sourceTree = "<group>"; };
 		D03D36292692ED2900BD8F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0E29EFD26934FC3008246D6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				D03D360E2692ED2900BD8F39 /* Assets.xcassets */,
 				D03D36132692ED2900BD8F39 /* Info.plist */,
 				D03D36102692ED2900BD8F39 /* Preview Content */,
+				D0E29EFD26934FC3008246D6 /* HeaderView.swift */,
 			);
 			path = valentine.l;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D03D360D2692ED2800BD8F39 /* ContentView.swift in Sources */,
+				D0E29EFE26934FC3008246D6 /* HeaderView.swift in Sources */,
 				D03D360B2692ED2800BD8F39 /* valentine_lApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

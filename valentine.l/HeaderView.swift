@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HeaderView.swift
 //  valentine.l
 //
 //  Created by jpo on 05/07/2021.
@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HeaderView: View {
+    
     let postCount = 10
     let followers = 1365988
     let followings = 5
@@ -74,9 +75,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .previewDevice("iPhone 11")
+        HeaderView()
     }
 }
