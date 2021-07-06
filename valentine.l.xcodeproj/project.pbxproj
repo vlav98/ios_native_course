@@ -15,6 +15,10 @@
 		D03D36282692ED2900BD8F39 /* valentine_lUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D36272692ED2900BD8F39 /* valentine_lUITests.swift */; };
 		D0DE2AF526933720005E1352 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0DE2AF426933720005E1352 /* Kingfisher */; };
 		D0E29EFE26934FC3008246D6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E29EFD26934FC3008246D6 /* HeaderView.swift */; };
+		D0ECD19C269441400056E3B0 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD19B269441400056E3B0 /* LikeButton.swift */; };
+		D0ECD1A1269449D80056E3B0 /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD1A0269449D80056E3B0 /* PlaygroundView.swift */; };
+		D0ECD1A6269453450056E3B0 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD1A5269453450056E3B0 /* PostView.swift */; };
+		D0ECD1AB26945F330056E3B0 /* ActivableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD1AA26945F330056E3B0 /* ActivableButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		D03D36272692ED2900BD8F39 /* valentine_lUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valentine_lUITests.swift; sourceTree = "<group>"; };
 		D03D36292692ED2900BD8F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0E29EFD26934FC3008246D6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		D0ECD19B269441400056E3B0 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		D0ECD1A0269449D80056E3B0 /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
+		D0ECD1A5269453450056E3B0 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		D0ECD1AA26945F330056E3B0 /* ActivableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivableButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				D03D36132692ED2900BD8F39 /* Info.plist */,
 				D03D36102692ED2900BD8F39 /* Preview Content */,
 				D0E29EFD26934FC3008246D6 /* HeaderView.swift */,
+				D0ECD19B269441400056E3B0 /* LikeButton.swift */,
+				D0ECD1A0269449D80056E3B0 /* PlaygroundView.swift */,
+				D0ECD1A5269453450056E3B0 /* PostView.swift */,
+				D0ECD1AA26945F330056E3B0 /* ActivableButton.swift */,
 			);
 			path = valentine.l;
 			sourceTree = "<group>";
@@ -270,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0ECD19C269441400056E3B0 /* LikeButton.swift in Sources */,
+				D0ECD1AB26945F330056E3B0 /* ActivableButton.swift in Sources */,
+				D0ECD1A1269449D80056E3B0 /* PlaygroundView.swift in Sources */,
 				D03D360D2692ED2800BD8F39 /* ContentView.swift in Sources */,
 				D0E29EFE26934FC3008246D6 /* HeaderView.swift in Sources */,
+				D0ECD1A6269453450056E3B0 /* PostView.swift in Sources */,
 				D03D360B2692ED2800BD8F39 /* valentine_lApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
