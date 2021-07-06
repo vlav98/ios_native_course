@@ -9,42 +9,30 @@ import SwiftUI
 import Kingfisher
 
 struct PostView: View {
-    let postURL = URL(string: "https://static.wikia.nocookie.net/gensin-impact/images/5/56/Liyue_%28Lantern_Rite%29.png/revision/latest/scale-to-width-down/1000?cb=20210216222706")
-    
-    @State var isLiked = false
-    
+    let post: Post
     var body: some View {
         VStack {
-            HStack {
-                Image("WB_ZL").resizable()
-                    .scaledToFit()
-                    .clipShape(Circle())
-                    .frame(minWidth: 0,
-                            maxWidth: 50)
-                VStack(alignment: .leading) {
-                    Text("Zhongli")
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.leading)
-                    Text("Liyue")
-                        .multilineTextAlignment(.leading)
-                }
-                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                Spacer()
-            }
-            KFImage(postURL)
+            HeaderPost(
+                profileURL: post.creator.profileURL,
+                name: post.creator.name,
+                location: post.userLocation
+            )
+            KFImage(post.pictureURL)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-            HStack {
-                LikeButton(isLiked: $isLiked)
-                    .padding()
-            }
-            .scaledToFit()
+//            HStack {
+//                ActivableButton(iconName: "heart", isOnColor: .red, isOn: $isLiked)
+//                ActivableButton(iconName: "flag", isOnColor: .primary, isOn: $isSaved)
+//            }
+//            .scaledToFit()
         }
     }
 }
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        Group {
+            PostView(post: PreviewData.post)
+        }
     }
 }

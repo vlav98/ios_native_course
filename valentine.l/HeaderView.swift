@@ -6,15 +6,11 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct HeaderView: View {
     
-    let postCount: Int
-    let followers: Int
-    let followings: Int
-    let name: String
-    let title: String
-    let description: String
+    let user: User
     let link = "https://ys.mihoyo.com/main/character/liyue?char=9"
     
     @State var isMore = false
@@ -22,7 +18,8 @@ struct HeaderView: View {
     var body: some View {
         VStack(spacing: 10.0) {
             HStack(alignment: .center) {
-                Image("WB_ZL").resizable()
+                KFImage(user.profileURL)
+                    .resizable()
                     .scaledToFit().clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 6))
                     .overlay(Circle().stroke(Color.gray, lineWidth: 1))
@@ -30,7 +27,7 @@ struct HeaderView: View {
                             maxWidth: .infinity)
                 Spacer()
                 VStack {
-                    Text("\(postCount)")
+                    Text("\(user.postCount)")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     Text("posts")
@@ -38,7 +35,7 @@ struct HeaderView: View {
                         maxWidth: .infinity)
                 Spacer()
                 VStack {
-                    Text("\(followers)")
+                    Text("\(user.followers)")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     Text("followers")
@@ -46,7 +43,7 @@ struct HeaderView: View {
                         maxWidth: .infinity)
                 Spacer()
                 VStack {
-                    Text("\(followings)")
+                    Text("\(user.followings)")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     Text("following")
@@ -56,11 +53,11 @@ struct HeaderView: View {
             .frame(minWidth: 0,
                    maxWidth: .infinity)
             VStack(alignment: .leading) {
-                Text("\(name)")
+                Text(user.name)
                     .fontWeight(.bold)
-                Text("\(title)")
+                Text(user.title)
                     .foregroundColor(Color.gray)
-                Text("\(description)")
+                Text(user.description)
                     .lineLimit(3)
                 HStack {
                     Spacer()
@@ -82,16 +79,9 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     
-    static let postCount = 10
-    static let followers = 1365988
-    static let followings = 5
-    static let name = "Zhongli"
-    static let title = "Personnage fictionnel"
-    static let description = "一份新的「契约」？好吧…虽然我还在度假，但也可以陪你走一趟。契约书上，该签什么名字呢？我有许多名字，度假期间的话…我会自称「钟离」。你呢，旅行者？你会签下什么名字？"
-    
     static var previews: some View {
         Group {
-            HeaderView(postCount: postCount, followers: followers, followings: followings, name: name, title: title, description: description)
+            HeaderView(user: PreviewData.user)
         }
         .previewLayout(.sizeThatFits)
     }

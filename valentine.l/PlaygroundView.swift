@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct PlaygroundView: View {
-    @State var name = ""
-    @State var cheese = false
+    let students = [ "Tartaglia", "Scaramuccia", "Pucinella", "Signora"]
     
     var body: some View {
-        VStack {
-            Text("Hello \(name)")
-            
-            TextField("Entrez votre nom", text: $name)
-            Toggle(isOn: $cheese, label: {
-                Text("Avec fromage")
-            })
+        List {
+            ForEach(students, id: \.self) { student
+                in
+                Text(student)
+            }
         }
     }
 }
