@@ -10,9 +10,9 @@ import Kingfisher
 
 struct HeaderView: View {
     
-    let user: User
+    @ObservedObject var user = PreviewData.user
     let link = "https://ys.mihoyo.com/main/character/liyue?char=9"
-    
+    @State var isHidden = false
     @State var isMore = false
     
     var body: some View {
@@ -72,6 +72,20 @@ struct HeaderView: View {
                     .foregroundColor(Color.blue)
                     .lineLimit(1)
             }
+            Button(action: {
+                user.followers += 1
+                isHidden = true
+            }, label: {
+                HStack {
+                    Spacer()
+                    Text("Follow").padding()
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .background(Color.blue)
+                .cornerRadius(10)
+                .opacity(isHidden ? 0 : 1)
+            })
         }
         .padding(.horizontal, 10)
     }
