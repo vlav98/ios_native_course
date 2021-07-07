@@ -13,10 +13,13 @@
 		D03D36122692ED2900BD8F39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03D36112692ED2900BD8F39 /* Preview Assets.xcassets */; };
 		D03D361D2692ED2900BD8F39 /* valentine_lTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D361C2692ED2900BD8F39 /* valentine_lTests.swift */; };
 		D03D36282692ED2900BD8F39 /* valentine_lUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D36272692ED2900BD8F39 /* valentine_lUITests.swift */; };
+		D0419CC3269594CD00C7AA7B /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0419CC2269594CD00C7AA7B /* NewTaskView.swift */; };
+		D0419CC82695A26100C7AA7B /* MyCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0419CC72695A26100C7AA7B /* MyCustomTabBar.swift */; };
 		D04694FC26947C0600F9D1BC /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04694FB26947C0600F9D1BC /* PreviewData.swift */; };
 		D04695012694802000F9D1BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04695002694802000F9D1BC /* User.swift */; };
 		D04695062694804F00F9D1BC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04695052694804F00F9D1BC /* Post.swift */; };
 		D046950B269484AF00F9D1BC /* HeaderPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046950A269484AF00F9D1BC /* HeaderPost.swift */; };
+		D04695102694A51100F9D1BC /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046950F2694A51100F9D1BC /* PostList.swift */; };
 		D0DE2AF526933720005E1352 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0DE2AF426933720005E1352 /* Kingfisher */; };
 		D0E29EFE26934FC3008246D6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E29EFD26934FC3008246D6 /* HeaderView.swift */; };
 		D0ECD19C269441400056E3B0 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECD19B269441400056E3B0 /* LikeButton.swift */; };
@@ -55,10 +58,13 @@
 		D03D36232692ED2900BD8F39 /* valentine.lUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = valentine.lUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03D36272692ED2900BD8F39 /* valentine_lUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valentine_lUITests.swift; sourceTree = "<group>"; };
 		D03D36292692ED2900BD8F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0419CC2269594CD00C7AA7B /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		D0419CC72695A26100C7AA7B /* MyCustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomTabBar.swift; sourceTree = "<group>"; };
 		D04694FB26947C0600F9D1BC /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		D04695002694802000F9D1BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D04695052694804F00F9D1BC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		D046950A269484AF00F9D1BC /* HeaderPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPost.swift; sourceTree = "<group>"; };
+		D046950F2694A51100F9D1BC /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
 		D0E29EFD26934FC3008246D6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		D0ECD19B269441400056E3B0 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		D0ECD1A0269449D80056E3B0 /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
@@ -129,6 +135,9 @@
 				D04695002694802000F9D1BC /* User.swift */,
 				D04695052694804F00F9D1BC /* Post.swift */,
 				D046950A269484AF00F9D1BC /* HeaderPost.swift */,
+				D046950F2694A51100F9D1BC /* PostList.swift */,
+				D0419CC2269594CD00C7AA7B /* NewTaskView.swift */,
+				D0419CC72695A26100C7AA7B /* MyCustomTabBar.swift */,
 			);
 			path = valentine.l;
 			sourceTree = "<group>";
@@ -300,7 +309,10 @@
 				D0ECD1AB26945F330056E3B0 /* ActivableButton.swift in Sources */,
 				D0ECD1A1269449D80056E3B0 /* PlaygroundView.swift in Sources */,
 				D03D360D2692ED2800BD8F39 /* ContentView.swift in Sources */,
+				D0419CC82695A26100C7AA7B /* MyCustomTabBar.swift in Sources */,
 				D04695012694802000F9D1BC /* User.swift in Sources */,
+				D04695102694A51100F9D1BC /* PostList.swift in Sources */,
+				D0419CC3269594CD00C7AA7B /* NewTaskView.swift in Sources */,
 				D0E29EFE26934FC3008246D6 /* HeaderView.swift in Sources */,
 				D0ECD1A6269453450056E3B0 /* PostView.swift in Sources */,
 				D03D360B2692ED2800BD8F39 /* valentine_lApp.swift in Sources */,

@@ -7,12 +7,21 @@
 
 import Foundation
 
-struct Post: Identifiable {
+class Post: Identifiable, ObservableObject {
     var id = UUID()
     let creator: User
     let userLocation: String
     let pictureURL: URL?
     
-    var isLiked: Bool
-    var isSaved: Bool
+    @Published var isLiked: Bool
+    @Published var isSaved: Bool
+    
+    init(id: UUID = UUID(), creator: User, userLocation: String, pictureURL: URL?, isLiked: Bool, isSaved: Bool) {
+        self.id = id
+        self.creator = creator
+        self.userLocation = userLocation
+        self.pictureURL = pictureURL
+        self.isLiked = isLiked
+        self.isSaved = isSaved
+    }
 }
